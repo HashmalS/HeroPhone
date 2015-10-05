@@ -1,16 +1,17 @@
 package com.hashmals.herophone;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
 import android.provider.ContactsContract;
+import android.telecom.Call;
 
 import java.util.Date;
 
 public class CallReceiver extends PhonecallReceiver {
     public static String name;
     public static Context mContext;
-
     public static String mNumber;
 
     @Override
@@ -22,9 +23,8 @@ public class CallReceiver extends PhonecallReceiver {
     }
 
     @Override
-    protected void onIncomingCallEnded(Context ctx, String number, Date start, Date end) {
-        android.os.Process.killProcess(android.os.Process.myPid());
-        System.exit(1);
+    protected void onIncomingCallEnded(Context context, String number, Date start, Date end) {
+        ((Activity)context).finish();
     }
 
     public static String getName() {
