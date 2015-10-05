@@ -24,7 +24,7 @@ public class CallReceiver extends PhonecallReceiver {
     @Override
     protected void onIncomingCallEnded(Context ctx, String number, Date start, Date end) {
         android.os.Process.killProcess(android.os.Process.myPid());
-        System.exit(0);
+        System.exit(1);
     }
 
     public static String getName() {
