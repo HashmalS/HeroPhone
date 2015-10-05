@@ -9,9 +9,11 @@
         android:allowBackup="true"
         android:icon="@drawable/forestize_icon"
         android:label="@string/app_name"
+        android:showOnLockScreen="true"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".CallActivity"
+            android:screenOrientation="sensorPortrait"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
