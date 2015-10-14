@@ -51,9 +51,9 @@ public class ImageTouchSlider extends RelativeLayout implements View.OnTouchList
     public void createView() {
         LayoutInflater inflater = (LayoutInflater) mContext
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-        //inflater.inflate(R.layout.image_touch_slider, this, true);
+        inflater.inflate(R.layout.fragment_call, this, true);
 
-        //mImage = (ImageView) findViewById(R.id.slider_image);
+        mImage = (ImageView) findViewById(R.id.touch_slider);
         mImage.setOnTouchListener(this);
 
         WindowManager manager = (WindowManager) mContext.getSystemService(Context.WINDOW_SERVICE);

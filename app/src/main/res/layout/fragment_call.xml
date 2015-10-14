@@ -27,4 +27,13 @@
         android:textColor="#770000"
         android:textSize="40sp"/>
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/touch_slider"
+        android:src="@drawable/forestize_seed"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignTop="@+id/text" />
+
 </RelativeLayout>
